@@ -1,5 +1,4 @@
 $('.all-content').hide();
-
 var bgColor;
 var effect = 'animated bounceInLeft'; /* bounceIn, bounceInUp, bounceInDown, bounceInLeft,
 										 bounceInRight, rotateIn, rotateInUpLeft, rotateInDownLeft,
@@ -27,3 +26,16 @@ $('.responsive').on('click', '.close', function(){
 	$('.card-front, .card-back').show();
 	$('.content').css('background-color',bgColor);
 });
+// init controller
+
+ AOS.init();
+$('.dot1').addClass('animated fadeIn');
+$('.dot2').addClass('animated fadeIn');
+$('.dot3').addClass('animated fadeIn');
+$('.dot4').addClass('animated fadeIn');
+$('.dot5').addClass('animated fadeIn');
+$('.dot6').addClass('animated fadeIn');
+$('.about').addClass('animated bounceInDown');
+$('.welcome').addClass('animated slideInLeft');
+$('.dot7').addClass('animated fadeIn');
+$('.scroll').addClass('animated slideInRight');
