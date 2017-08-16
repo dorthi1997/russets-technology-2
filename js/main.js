@@ -1,4 +1,27 @@
+$(function () { // wait for document ready
+		// init
+		var controller = new ScrollMagic.Controller();
+
+		// define movement of panels
+		var wipeAnimation = new TimelineMax()
+           .fromTo("section.panel.blue", 1, {x:  "0"}, {x: "-200%", ease: Linear.easeNone})  // in from left
+			.fromTo("section.panel.yellow",    1, {y:  "100%"}, {y: "0%", ease: Linear.easeNone})  // in from right
+           .fromTo("section.panel.green", 1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+           .fromTo("section.panel.black",    1, {y:  "100%"}, {y: "0%", ease: Linear.easeNone})  // in from right
+
+		// create scene to pin and link animation
+		new ScrollMagic.Scene({
+				triggerElement: "#pinContainer",
+				triggerHook: "onLeave",
+				duration: "300%"
+			})
+			.setPin("#pinContainer")
+			.setTween(wipeAnimation)
+			.addTo(controller);
+	});
+
 $('.all-content').hide();
+
 var bgColor;
 var effect = 'animated bounceInLeft'; /* bounceIn, bounceInUp, bounceInDown, bounceInLeft,
 										 bounceInRight, rotateIn, rotateInUpLeft, rotateInDownLeft,
@@ -26,16 +49,3 @@ $('.responsive').on('click', '.close', function(){
 	$('.card-front, .card-back').show();
 	$('.content').css('background-color',bgColor);
 });
-// init controller
-
- AOS.init();
-$('.dot1').addClass('animated fadeIn');
-$('.dot2').addClass('animated fadeIn');
-$('.dot3').addClass('animated fadeIn');
-$('.dot4').addClass('animated fadeIn');
-$('.dot5').addClass('animated fadeIn');
-$('.dot6').addClass('animated fadeIn');
-$('.about').addClass('animated bounceInDown');
-$('.welcome').addClass('animated slideInLeft');
-$('.dot7').addClass('animated fadeIn');
-$('.scroll').addClass('animated slideInRight');

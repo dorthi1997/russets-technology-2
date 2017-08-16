@@ -1,10 +1,43 @@
+html,body {
+	height:100%;
+    margin: 0;
+    background: url("images/rev-home-classic-1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#titlechart {
+    text-align: center;
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    min-width: 100%;
+    height: 100vh;
+}
+#section-wipes {
+    height: 100%;
+    width: 100%;
+    background-image: none;
+}
+#pinContainer {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+}
+.panel {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Cabin');
+/*
 body
 {
     background: url("images/rev-home-classic-1.jpg");
     margin: 0px;
     background-attachment: fixed;
 }
+*/
 .heading
 {
     height: 500px;
@@ -50,8 +83,8 @@ body
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
-    margin-left: -440px !important;
-    margin-top: 9px;
+    margin-left: 0;
+    margin-top: 91px;
 }
 .left-n {
     font-size: 58px;
@@ -65,14 +98,14 @@ body
     font-size: 57px;
     position: absolute;
     top: -58px;
-    left: -410px;
+    left: 31px;
     transform: scaleX(-1);
 }
 .right-n {
     position: absolute;
     top: -58px;
     font-size: 58px;
-    left: -374px;
+    left: 70px;
     transform: scaleX(-1);
 }
 .logo-site-name
@@ -81,77 +114,71 @@ body
     width: 153%;
     font-size: 17px;
 }
-
-.dot1
-{
+.dot1 {
     position: relative;
     height: 163px;
     width: 10px;
-    top: 164px;
-    left: 236px;
+    top: 64px;
+    left: 63px;
     border-right: 3px dotted white;
 }
-.dot2
- {
+.dot2 {
     position: relative;
-    top: 161px;
-    width: 94px;
-    left: 252px;
+    top: -24px;
+    left: 71px;
     border-top: 3px dotted white;
     border-radius: 57px;
 }
-.dot3
-{
+.dot3 {
     position: relative;
     width: 23px;
     border-left: 3px dotted white;
     height: 99px;
-    margin-left: 345px;
-    margin-top: 158px;
+    margin-left: 220px;
+    margin-top: -27px;
 }
-.dot4
- {
+.dot4 {
     position: absolute;
     width: 210px;
     border-top: 3px dotted white;
-    margin-left: 137px;
-    margin-top: -2px;
+    margin-left: 13px;
+    margin-top: -3px;
 }
 .dot5 {
     position: absolute;
     height: 75px;
     width: 20px;
     border-left: 3px dotted white;
-    top: 416px;
-    left: 583px;
+    top: 253px;
+    left: 13px;
 }
 .about {
     color: white;
     margin-top: -62px;
-    margin-left: 156px;
+    margin-left: 15px;
     font-size: 36px;
     letter-spacing: 4px;
     word-spacing: 12px;
+    width: 133%;
 }
 .dot6 {
     height: 50px;
     width: 135px;
     border-top: 3px dotted white;
-    margin-top: -55px;
-    margin-left: 139px;
+    margin-top: -49px;
+    margin-left: 12px;
 }
 .dot7 {
-    height: 380px;
+    height: 291px;
     width: 30px;
-    margin-left: 275px;
+    margin-left: 146px;
     margin-top: -53px;
     border-left: 3px dotted white;
 }
-.welcome
-{
+.welcome {
     color: white;
     padding: 0px;
-    margin-left: 34px;
+    margin-left: -23px;
     margin-top: 2px;
     font-size: 19px;
     letter-spacing: 5px;
@@ -169,18 +196,14 @@ body
 .aboutbox
 {
     position: absolute;
-    height: 500;
-    width: 72%;
-    margin-left: -215px;
-    margin-bottom: 19px;
-    
 }
+
 .headabout {
     position: absolute;
-    height: 81px;
-    width: 303px;
+    height: 70px;
+    width: 341px;
     border: 7px solid white;
-    margin-left: 188px;
+    margin-left: 445px;
     color: white;
     font-size: 53px;
     padding-left: 21px;
@@ -189,7 +212,7 @@ body
     padding-top: 7px;
     font-family: 'Cabin', sans-serif;
     font-weight: 600;
-    margin-top: 7px;
+    margin-top: 86px;
     text-transform: uppercase;
     box-shadow: 3px 1px 7px #000;
     text-shadow: 5px 6px #000;
@@ -199,8 +222,8 @@ body
     height: 209px;
     width: 751px;
     background: white;
-    margin-top: 90px;
-    margin-left: 94px;
+    margin-top: 169px;
+    margin-left: 278px;
 }
 .parabout {
     line-height: 22px;
@@ -222,7 +245,7 @@ blockquote {
     font-size: 14px;
     line-height: 1.2;
     color: #666;
-    top: 300px;
+    top: 238px;
     width: 292px;
     -moz-box-shadow: 2px 2px 15px #ccc;
     -webkit-box-shadow: 2px 2px 15px #ccc;
@@ -232,6 +255,8 @@ blockquote {
     border-right-style: solid;
     border-right-width: 2px;
     left: 553px;
+    margin-top: 141px;
+    margin-left: 189px;
 }
 blockquote::before{
   content: "\201C"; /*Unicode for Left Double Quote*/
@@ -265,32 +290,39 @@ blockquote.default{
 span.Cdefault{
   color:#434a53;
 }
-.dot8
-{
+.dot8 {
     position: absolute;
-    width: 283px;
+    width: 400px;
     height: 20px;
     border-top: 3px dotted white;
-    margin-left: 607px;
-    margin-top: 184px;
+    margin-left: 1026px;
+    margin-top: -27px;
 }
-.dot9
+.dota
 {
+    position: absolute;
+    margin-left: 1590px;
+    margin-top: -237px;
+    border-top: 3px dotted white;
+    height: 30px;
+    border-left: 3px dotted white;
+    width: 1159px;
+}
+.dot9 {
     position: absolute;
     width: 200px;
-    height: 400px;
+    height: 87px;
     border-right: 3px dotted white;
-    margin-left: 687px;
-    margin-top: 185px;
+    margin-left: 1320px;
+    margin-top: -27px;
 }
-.dot10
-{
+.dot10 {
     position: absolute;
-    width: 500px;
+    width: 47px;
     height: 2px;
     border-top: 3px dotted white;
-    margin-top: 584px;
-    margin-left: 390px;
+    margin-top: 59px;
+    margin-left: 1520px;
 }
 .dot11
 {
@@ -320,23 +352,25 @@ span.Cdefault{
 }
 .dot14 {
     position: absolute;
-    width: 88px;
-    height: 71px;
-    margin-left: 86px;
+    width: 46px;
+    height: 55px;
+    margin-left: 1425px;
     border-bottom: 3px dotted white;
-    margin-top: 735px;
+    margin-top: -27px;
     color: white;
-    font-size: 67px;
-    padding-left: 12px;
-}
-.dot15
-{
-    position: absolute;
-    margin-top: 808px;
-    width: 2px;
-    height: 58px;
+    font-size: 53px;
+    padding-left: 5px;
     border-left: 3px dotted white;
-    margin-left: 183px;
+    padding-top: 14px;
+}
+.dot15 {
+    position: absolute;
+    margin-top: -1px;
+    width: 40px;
+    height: 43px;
+    border-left: 3px dotted white;
+    margin-left: 1477px;
+    border-top: 3px dotted white;
 }
 .dot16 {
     position: absolute;
@@ -356,59 +390,37 @@ span.Cdefault{
 }
 .dot18 {
     position: absolute;
-    margin-top: 707px;
+    margin-top: -63px;
     width: 79px;
     height: 72px;
-    border-bottom: 3px dotted white;
-    margin-left: 157px;
+    margin-left: 1472px;
     color: white;
-    font-size: 67px;
-    padding-top: 0px;
-    padding-left: 5px;
-}
-.dot19 {
-    position: absolute;
-    margin-top: 779px;
-    width: 82px;
-    height: 61px;
-    border-right: 3px dotted white;
-    margin-left: 157px;
-}
-.dot20 {
-    position: absolute;
-    margin-top: 778px;
-    width: 26px;
-    height: 59px;
-    border-bottom: 3px dotted white;
-    margin-left: 215px;
-}
-.dot21 {
-    position: absolute;
-    margin-top: 743px;
-    width: 2px;
-    height: 97px;
-    border-left: 3px dotted white;
-    margin-left: 215px;
+    font-size: 54px;
+    padding-top: 10px;
+    padding-left: 8px;
 }
 .dot22 {
     position: absolute;
-    margin-top: 669px;
-    width: 71px;
-    height: 73px;
+    margin-top: -1px;
+    width: 40px;
+    height: 56px;
     border-bottom: 3px dotted white;
-    margin-left: 215px;
+    margin-left: 1517px;
     color: white;
-    font-size: 67px;
-    padding-top: 0px;
-    padding-left: 15px;
+    font-size: 53px;
+    padding-left: 8px;
+    border-left: 3px dotted white;
+    border-right: 3px dotted white;
+    padding-top: 17px;
 }
 .dot23 {
     position: absolute;
-    margin-top: 742px;
-    width: 26px;
-    height: 134px;
+    margin-top: -304px;
+    width: 124px;
+    height: 302px;
     border-left: 3px dotted white;
-    margin-left: 300px;
+    margin-left: 1568px;
+    border-top: 3px dotted white;
 }
 .dot24 {
     position: absolute;
@@ -428,11 +440,11 @@ span.Cdefault{
 }
 .dot26 {
     position: absolute;
-    margin-top: 804px;
-    width: 35%;
+    margin-top: -304px;
+    width: 64%;
     height: 600px;
     border-top: 3px dotted white;
-    margin-left: 245px;
+    margin-left: 1640px;
     border-top-right-radius: 51px;
     border-right: 3px dotted white;
     color: white;
@@ -451,20 +463,20 @@ span.Cdefault{
     text-align: right;
     list-style: none;
 }
-.ser
-{
+.ser {
     position: absolute;
-    height: 454px;
-    width: 656px;
-    margin-top: 1178px;
-    margin-left: 31px;
+    height: 475px;
+    width: 702px;
+    margin-top: -202px;
+    margin-left: 1616px;
     border-bottom: 3px dotted white;
     border-left: 3px dotted white;
     border-bottom-left-radius: 52px;
     border-top: 3px dotted white;
+    border-right: 3px dotted white;
     border-top-left-radius: 69px;
 }
-ol, ul {
+ol, ul {        nybgtdvscx
   list-style: none; }
 
 table {
@@ -1102,25 +1114,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .responsive {
   width: 100%;
   height: 100%; }
-
 .content {
     float: left;
     border-radius: 51px;
-    margin-left: 29px;
-    margin-top: 21px;
-    width: 114%;
-    height: 91%;
+    margin-left: 14px;
+    margin-top: 12px;
+    width: 95%;
+    height: 95%;
 }
+
   .content img {
     width: 100%;
-    height: 101%; }
- .content li {
+    height: 101%; 
+}
+.content li {
     float: left;
-    border-bottom: 1px solid #2c2c2c;
-    border-left: 1px solid #2c2c2c;
-    width: 33.2%;
-    height: 31%;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    width: 45.2%;
+    height: 30%;
     position: relative;
+    margin-left: 27px;
+    margin-top: 2px;
 }
     .content li:hover {
       cursor: pointer; }
@@ -1254,28 +1271,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       width: 100%; }
   .content li {
     width: 33%; } }
-.dot27
- {
+.dot27 {
     position: absolute;
-    width: 286px;
-    height: 581px;
-    margin-top: 1178px;
+    width: 289px;
+    height: 111px;
+    margin-top: -237px;
     border-top: 3px dotted white;
-    margin-left: 684px;
+    margin-left: 2751px;
     border-right: 3px dotted white;
     border-top-right-radius: 51px;
 }
-.who
+.dotf
 {
     position: absolute;
-    top: 2336px;
+    margin-left: 1590px;
+    margin-top: -210px;
+    border-left: 3px dotted white;
+    height: 509px;
+    border-bottom: 3px dotted white;
+    width: 51px;
+}
+.who {
+    position: absolute;
+    top: 214px;
     height: 458px;
-    width: 100%;
+    width: 250%;
+    margin-left: 2193px;
 }
 .whoweare {
     position: absolute;
-    height: 81px;
-    width: 399px;
+    height: 71px;
+    width: 433px;
     border: 7px solid white;
     color: white;
     font-size: 53px;
@@ -1291,27 +1317,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-left: 751px;
     margin-top: -13px;
 }
-.letwork
-{
+.letwork {
     position: absolute;
-    margin-top: 1838px;
+    margin-top: -34px;
     height: 300px;
     width: 700px;
-    margin-left: 521px;
+    margin-left: 3084px;
     border: 8px solid white;
+    background: black;
+    opacity: 0.9;
 }
-.modal__background {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition: 0.35s;
-  transition: 0.35s;
-  background: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  pointer-events: none;
-  z-index: 2;
+.modal__background 
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+    margin-left: 2691px;
+    width: 101%;
 }
 .modal__background:target {
   opacity: 1;
@@ -1326,7 +1356,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    background: black;
+    
     height: 47vh;
     width: 699px;
 }
