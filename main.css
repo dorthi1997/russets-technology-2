@@ -28,6 +28,16 @@ html,body {
 	width: 100%;
 	position: absolute;
 }
+.servbox
+{
+    position: absolute;
+    margin-left: 1629px;
+    margin-top: -232px;
+    height: 500px;
+    width: 685px;
+    border: 3px dotted white;
+}
+
 
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 /*
@@ -298,16 +308,7 @@ span.Cdefault{
     margin-left: 1026px;
     margin-top: -27px;
 }
-.dota
-{
-    position: absolute;
-    margin-left: 1590px;
-    margin-top: -237px;
-    border-top: 3px dotted white;
-    height: 30px;
-    border-left: 3px dotted white;
-    width: 1159px;
-}
+
 .dot9 {
     position: absolute;
     width: 200px;
